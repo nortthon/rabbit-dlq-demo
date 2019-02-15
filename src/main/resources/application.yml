@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    listener:
+      type: direct
+      direct:
+        retry:
+          enabled: true
+          max-attempts: 5
+          initial-interval: 2s
+          max-interval: 5s
